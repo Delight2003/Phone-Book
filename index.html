@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="fetchPhoneBook()">
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+
+            </nav>
+            <h3 class="text-muted">Phone Book</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h2>Save Your Important Contacts</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label>Person Name</label>
+                    <input type="text" class="form-control" id="personName">
+                </div>
+                <div class="form-group">
+                    <label>Person Mobile</label>
+                    <input type="text" class="form-control" id="personMobile">
+                </div>
+                <button type="submit" class="btn btn-success">Save</button>
+            </form>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="phonebookResult">
+
+                    </tbody>
+                       
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddAGVdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
